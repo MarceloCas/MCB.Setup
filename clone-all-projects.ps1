@@ -30,6 +30,8 @@ $repositoryCollection = @(
     ("MCB.Core.Infra.CrossCutting.DesignPatterns.Validator.Abstractions", "Core.Infra.CC.DP.Val.Abs"),
     ("MCB.Core.Infra.CrossCutting.DesignPatterns.Validator", "Core.Infra.CC.DP.Val"),
     ("MCB.Core.Infra.CrossCutting.DesignPatterns.Abstractions", "Core.Infra.CC.DP.Abs"),
+    ("MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions", "Core.Infra.CC.DI.Abs"),
+    ("MCB.Core.Infra.CrossCutting.DependencyInjection", "Core.Infra.CC.DI"),
     ("MCB.Core.Infra.CrossCutting.DesignPatterns", "Core.Infra.CC.DP"),
     ("MCB.Core.Infra.CrossCutting", "Core.Infra.CC"),
     ("MCB.Core.Domain.Entities.Abstractions", "Core.Domain.Entities.Abs"),
