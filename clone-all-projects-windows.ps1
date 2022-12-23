@@ -1,4 +1,4 @@
-$path = "/mcb/github/marcelocas";
+$path = "C:\mcb\github\marcelocas";
 $clearPath = $false;
 $gitBasePath = "https://github.com/MarceloCas";
 
@@ -33,6 +33,7 @@ $repositoryCollection = @(
     ("MCB.Core.Infra.CrossCutting.DesignPatterns", "Core.Infra.CC.DP"),
     ("MCB.Core.Infra.CrossCutting.DependencyInjection.Abstractions", "Core.Infra.CC.DI.Abs"),
     ("MCB.Core.Infra.CrossCutting.DependencyInjection", "Core.Infra.CC.DI"),
+    ("MCB.Core.Infra.CrossCutting.RabbitMq", "Core.Infra.CC.RabbitMq"),
     ("MCB.Core.Infra.CrossCutting.Abstractions", "Core.Infra.CC.Abs"),
     ("MCB.Core.Infra.CrossCutting", "Core.Infra.CC"),
     ("MCB.Core.Domain.Entities.Abstractions", "Core.Domain.Entities.Abs"),
@@ -75,7 +76,7 @@ foreach ($repository in $repositoryCollection) {
     $repositoryName = $repository[0];
 
     $gitPath = "$gitBasePath/$repositoryName";
-    $repositoryPath = Join-Path -Path $path -ChildPath $repository[0];;
+    $repositoryPath = Join-Path -Path $path -ChildPath $repository[1];
     
     # clear or bypass to next repository if exists
     if(Test-Path -Path $repositoryPath){
@@ -87,8 +88,8 @@ foreach ($repository in $repositoryCollection) {
     }
 
     # clone repository
-    # git clone $gitPath $repositoryPath;
-    git clone git@github.com:MarceloCas/$repositoryName.git
+    git clone $gitPath $repositoryPath;
+    #git clone git@github.com:MarceloCas/$repositoryName.git
 
     # trust repository directory
     #git config --global --add safe.directory $repositoryPath;
