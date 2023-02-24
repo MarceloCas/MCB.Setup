@@ -35,6 +35,8 @@ $repositoryCollection = @(
     ("MCB.Core.Infra.CrossCutting.DependencyInjection", "Core.Infra.CC.DI"),
     ("MCB.Core.Infra.CrossCutting.RabbitMq", "Core.Infra.CC.RabbitMq"),
     ("MCB.Core.Infra.CrossCutting.Abstractions", "Core.Infra.CC.Abs"),
+    ("MCB.Core.Infra.CrossCutting.Observability.Abstractions", "Core.Infra.CC.Obs.Abs"),
+    ("MCB.Core.Infra.CrossCutting.Observability.OpenTelemetry", "Core.Infra.CC.Obs.OpenTelemetry"),
     ("MCB.Core.Infra.CrossCutting", "Core.Infra.CC"),
     ("MCB.Core.Domain.Entities.Abstractions", "Core.Domain.Entities.Abs"),
     ("MCB.Core.Domain.Entities", "Core.Domain.Entities"),
